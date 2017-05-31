@@ -1,0 +1,25 @@
+$(document).ready(function() 
+{
+	flag=0;
+	$("#filtro").click(
+		function(){
+			if(flag%2==0)
+			{
+				$("#temi").animate({left:'0vw'});
+				$("#filtro").animate({left:'35vw'});
+				$(".museo").animate({left:'35vw'});
+				$(".container").animate({left:'35vw'});
+				$("#imgarr").animate({left:'35vw'});
+				flag++;
+			}
+			else
+			{
+				$("#temi").animate({left:'-35vw'});
+				$("#filtro").animate({left:'0vw'});
+				$(".museo").animate({left:'0vw'});
+				$(".container").animate({left:'0vw'});
+				$("#imgarr").animate({left:'0vw'});
+				flag++;
+			}
+	});
+});
